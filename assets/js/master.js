@@ -37,7 +37,7 @@
 		/* ===== COUNTERS  ===== */
 
 		$('.counter').counterUp({
-            delay: 20,
+            delay: 50,
             time: 4000
     });
 
