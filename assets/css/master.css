@@ -7846,3 +7846,7 @@ body{
 .pad-zero{
     padding-left: 0px
 }
+
+.tab-active{
+    color: #086ad8!important
+}
