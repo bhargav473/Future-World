@@ -59,6 +59,10 @@
 
 /* Transitons */
 
+
+
+
+
 @-webkit-keyframes it-zoom {
   0% {
     -webkit-transform: scale(1);
@@ -7851,3 +7855,18 @@ body{
     color: #086ad8!important
 }
 #more {display: none;}
+
+.tsxt-arg P{
+    text-align: justify
+}
+
+.contact-form  input{
+   
+        padding: 18px
+  
+}
+@media (max-width: 576px) {
+   .d-sx-none {
+       display: none !important;
+   }
+}
