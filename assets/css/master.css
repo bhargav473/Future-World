@@ -258,6 +258,8 @@ video {
   width: 100%;
 }
 .html5-video {
+    
+    
   max-width: 100%  ;
   background-color: #000;
   height: auto;
@@ -276,12 +278,30 @@ video {
   
   
 }
-/*@media only screen and (max-width: 600px) {
-  .html5-video {
- 
-   height: 100%!important
-  }*/
+
+@media only screen and (max-width: 600px)   {
+    .html5-video-mobile{
+       
+  background-color: #000;
+  height: auto;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: auto;
+  z-index: -3;
   
+    }                                                         
+                                                                   
+  }
+
+
 iframe,
 embed,
 object {
@@ -7864,9 +7884,4 @@ body{
    
         padding: 18px
   
-}
-@media (max-width: 576px) {
-   .d-sx-none {
-       display: none !important;
-   }
 }
