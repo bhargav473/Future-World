@@ -7890,3 +7890,38 @@ body {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+
+.side {
+    
+    width: auto!important
+}
+
+.scroll1::-webkit-scrollbar {
+  width: 0px;
+}
+ 
+.scroll1::-webkit-scrollbar-track {
+  background: transparent!important;
+}
+ 
+.scroll1::-webkit-scrollbar-thumb {
+  background: #666; 
+}
+
+.side .widget ul.link li{
+    font-size: 18px
+}
+dget li a:hover{
+     color: #3498db !important;
+}
+
+
+.side-social a:hover{
+    color:white!important
+}
+
+@media print {
+               .noprint {
+                  visibility: hidden;
+               }
+            }

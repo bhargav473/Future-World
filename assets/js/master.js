@@ -682,38 +682,80 @@
 
 	});
         
+   //     Disable right-click
+// document.addEventListener('contextmenu', (e) => e.preventDefault());
+//
+// function ctrlShiftKey(e, keyCode) {
+//   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+// }
+// 
+// document.onkeydown = (e) => {
+//   // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+//   if (
+//	 event.keyCode === 123 ||
+//	 ctrlShiftKey(e, 'I') ||
+//	 ctrlShiftKey(e, 'J') ||
+//	 ctrlShiftKey(e, 'C') ||
+//	 (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+//   )
+//	 return false;
+// };
+     
         
- // Disable right-click
- document.addEventListener('contextmenu', (e) => e.preventDefault());
+        
+        
+        
+/** TO DISABLE SCREEN CAPTURE **/
+document.addEventListener('keyup', (e) => {
+    if (e.key == 'PrintScreen') {
+        navigator.clipboard.writeText('');
+        alert('Screenshots disabled!');
+    }
+});
 
- function ctrlShiftKey(e, keyCode) {
-   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
- }
- 
- document.onkeydown = (e) => {
-   // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-   if (
-	 event.keyCode === 123 ||
-	 ctrlShiftKey(e, 'I') ||
-	 ctrlShiftKey(e, 'J') ||
-	 ctrlShiftKey(e, 'C') ||
-	 (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-   )
-	 return false;
- };
- 
- 
+/** TO DISABLE PRINTS WHIT CTRL+P **/
+document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.key == 'p') {
+        alert('This section is not allowed to print or export to PDF');
+        e.cancelBubble = true;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+    }
+});
+
+/* TO DO: There are combinations that remain to be solved 
+    --> Windows+Shift+S
+*/
 
         
         
         
-        
-        
+        document.addEventListener("keyup", function (e) {
+    var keyCode = e.keyCode ? e.keyCode : e.which;
+            if (keyCode == 44) {
+                stopPrntScr();
+            }
+        });
+function stopPrntScr() {
 
-        
-        
-        
-        
+            var inpFld = document.createElement("input");
+            inpFld.setAttribute("value", ".");
+            inpFld.setAttribute("width", "0");
+            inpFld.style.height = "0px";
+            inpFld.style.width = "0px";
+            inpFld.style.border = "0px";
+            document.body.appendChild(inpFld);
+            inpFld.select();
+            document.execCommand("copy");
+            inpFld.remove(inpFld);
+        }
+       function AccessClipboardData() {
+            try {
+                window.clipboardData.setData('text', "Access   Restricted");
+            } catch (err) {
+            }
+        }
+        setInterval("AccessClipboardData()", 300);
         
 
 /*End Jquery*/
