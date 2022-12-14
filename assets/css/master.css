@@ -7893,7 +7893,7 @@ body {
 
 .side {
     
-    width: auto!important
+    width: 300px!important
 }
 
 .scroll1::-webkit-scrollbar {
@@ -7915,11 +7915,31 @@ dget li a:hover{
      color: #3498db !important;
 }
 
-
-.side-social a:hover{
-    color:white!important
+.side .widget ul.link li a:hover{
+    
+     color:#3498db!important
+}
+.side .widget ul.link li {
+    
+     font-size: 14px;
+      letter-spacing: 1px;
 }
 
+
+.side-social li a:hover{
+    color:white!important
+}
+.side-social {
+    color:white!important;
+
+}
+
+.side-social li {
+    color:white!important;
+
+        cursor: pointer;
+    
+}
 @media print {
                .noprint {
                   visibility: hidden;
