@@ -774,6 +774,11 @@ function stopPrntScr() {
 
 
 
+function disableControls() { 
+  x.controls = false;
+  x.load();
+} 
+  
 
 
 
