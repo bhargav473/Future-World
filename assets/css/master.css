@@ -7940,6 +7940,14 @@ dget li a:hover{
         cursor: pointer;
     
 }
+
+.side-social li{
+    float: left;
+}
+
+
+
+
 @media print {
                .noprint {
                   visibility: hidden;
