@@ -7950,6 +7950,19 @@ display: none !important;
 opacity: 1 !important;}
 
 
+
+  video::slotted::-webkit-media-controls-container{
+      display:none !important;
+      visibility: hidden!important;
+      opacity: 0 !important;
+     -webkit-appearance: none !important;
+    }
+
+
+
+
+
+
 @media print {
                .noprint {
                   visibility: hidden;
