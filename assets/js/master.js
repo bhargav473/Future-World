@@ -771,14 +771,18 @@ function stopPrntScr() {
 //
 //
 
+useEffect(() => {
+  ref &&
+    ref.current
+      .play()
+      .then(() => {})
+      .catch((err) => {
+        // Video couldn't play, low power play button showing.
+      });   
+}, []);
 
 
 
-function disableControls() { 
-  x.controls = false;
-  x.load();
-} 
-  
 
 
 
