@@ -7350,8 +7350,8 @@ footer .xl-icon li:last-child {
 }
 .client-logo img {
   margin: auto;
-  opacity: 0.7;
-  filter: alpha(opacity=70);
+  /* opacity: 0.7;
+  filter: alpha(opacity=70); */
 }
 .client-logo img:hover {
   opacity: 1;
@@ -7892,80 +7892,71 @@ body {
 }
 
 .side {
-    
-    width: 300px!important
+  width: 300px !important;
 }
 
 .scroll1::-webkit-scrollbar {
   width: 0px;
 }
- 
+
 .scroll1::-webkit-scrollbar-track {
-  background: transparent!important;
+  background: transparent !important;
 }
- 
+
 .scroll1::-webkit-scrollbar-thumb {
-  background: #666; 
+  background: #666;
 }
 
-.side .widget ul.link li{
-    font-size: 18px
+.side .widget ul.link li {
+  font-size: 18px;
 }
-dget li a:hover{
-     color: #3498db !important;
+dget li a:hover {
+  color: #3498db !important;
 }
 
-.side .widget ul.link li a:hover{
-    
-     color:#3498db!important
+.side .widget ul.link li a:hover {
+  color: #3498db !important;
 }
 .side .widget ul.link li {
-    
-     font-size: 14px;
-      letter-spacing: 1px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
-
-.side-social li a:hover{
-    color:white!important
+.side-social li a:hover {
+  color: white !important;
 }
 .side-social {
-    color:white!important;
-
+  color: white !important;
 }
 
 .side-social li {
-    color:white!important;
+  color: white !important;
 
-        cursor: pointer;
-    
+  cursor: pointer;
 }
 
-.side-social li{
-    float: left;
+.side-social li {
+  float: left;
 }
 
 video::-webkit-media-controls-panel {
-display: none !important;
-opacity: 1 !important;}
-
-
-
-  video::slotted::-webkit-media-controls-container{
-      display:none !important;
-      visibility: hidden!important;
-      opacity: 0 !important;
-     -webkit-appearance: none !important;
-    }
-
-
-video::-webkit-media-controls-enclosure {
-  display:none !important;
+  display: none !important;
+  opacity: 1 !important;
 }
 
+video::slotted::-webkit-media-controls-container {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  -webkit-appearance: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
 
 @media print {
-               .noprint {
-                  visibility: hidden;
-               }
-            }
+  .noprint {
+    visibility: hidden;
+  }
+}
