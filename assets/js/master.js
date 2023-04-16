@@ -826,31 +826,31 @@ jQuery(function($) {
 
   /*End Jquery*/
 
-  function copyToClipboard() {
-    var aux = document.createElement("input");
-    aux.setAttribute("value", "print screen disabled!");
-    document.body.appendChild(aux);
-    aux.select();
-    document.execCommand("copy");
-    // Remove it from the body
-    document.body.removeChild(aux);
-    alert("Print screen disabled!");
-  }
-
-  $(window).keyup(function(e) {
+  document.addEventListener("keydown", function(e) {
     if (e.keyCode == 44) {
-      copyToClipboard();
+      e.preventDefault();
+      return false;
     }
   });
 
-  function disable() {
-    document.onkeydown = function(e) {
-      return false;
-    };
-  }
-  function enable() {
-    document.onkeydown = function(e) {
-      return true;
-    };
-  }
+  document.addEventListener("keydown", function(event) {
+    if (event.keyCode == 116) {
+      event.preventDefault();
+      alert("The F5 key is disabled on this website");
+    }
+  });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.keyCode == 44) {
+      event.preventDefault();
+      alert("Screenshots are disabled on this website");
+    }
+  });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "PrintScreen") {
+      event.preventDefault();
+      alert("Screenshots are disabled on this website");
+    }
+  });
 });
