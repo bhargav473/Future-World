@@ -868,4 +868,16 @@ jQuery(function($) {
       event.preventDefault();
     }
   });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() == "a") {
+      event.preventDefault();
+    }
+  });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() == "a") {
+      event.preventDefault();
+    }
+  });
 });
