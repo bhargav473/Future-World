@@ -853,4 +853,10 @@ jQuery(function($) {
       alert("Screenshots are disabled on this website");
     }
   });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key == "Enter") {
+      event.preventDefault();
+    }
+  });
 });
