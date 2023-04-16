@@ -859,4 +859,13 @@ jQuery(function($) {
       event.preventDefault();
     }
   });
+
+  document.addEventListener("keydown", function(event) {
+    if (
+      (event.ctrlKey && event.key == "c") ||
+      (event.ctrlKey && event.key == "v")
+    ) {
+      event.preventDefault();
+    }
+  });
 });
