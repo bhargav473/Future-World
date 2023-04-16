@@ -842,4 +842,15 @@ jQuery(function($) {
       copyToClipboard();
     }
   });
+
+  function disable() {
+    document.onkeydown = function(e) {
+      return false;
+    };
+  }
+  function enable() {
+    document.onkeydown = function(e) {
+      return true;
+    };
+  }
 });
