@@ -194,7 +194,6 @@
          <!--== Who We Are End ==-->  
          <!--== About-Us Details End ==-->
        
-            <div class="container">
                <div class="row">
                   <div class="col-sm-8">
                      <h2>
@@ -346,4 +345,4 @@
       <!--== Javascript Plugins End ==-->
    </body>
 </html>
-=======
+
