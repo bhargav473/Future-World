@@ -590,7 +590,7 @@
             </div>
          </section>
          <!--== Blog Details End ==-->
-        
+         <section class="pb-0" style="border-top :1PX solid #ecf0f1">
              <div class="container" >
                <div class="row">
                   <div class="col-sm-8">
