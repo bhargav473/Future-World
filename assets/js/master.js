@@ -1,9 +1,9 @@
 /* ===== LOADER OVERLAY ===== */
 
-jQuery(function($) {
+jQuery(function ($) {
   "use strict";
 
-  jQuery(document).ready(function($) {
+  jQuery(document).ready(function ($) {
     /* ===== jQuery Varibles ===== */
 
     mainSlider();
@@ -18,12 +18,8 @@ jQuery(function($) {
 
     /* ===== PRELOADER  ===== */
 
-    $("#loader-overlay")
-      .delay(500)
-      .fadeOut();
-    $(".loader")
-      .delay(1000)
-      .fadeOut("slow");
+    $("#loader-overlay").delay(500).fadeOut();
+    $(".loader").delay(1000).fadeOut("slow");
 
     $(window).trigger("scroll");
     $(window).trigger("resize");
@@ -54,22 +50,22 @@ jQuery(function($) {
     /* ===== Parallax Stellar ===== */
 
     var isMobile = {
-      Android: function() {
+      Android: function () {
         return navigator.userAgent.match(/Android/i);
       },
-      BlackBerry: function() {
+      BlackBerry: function () {
         return navigator.userAgent.match(/BlackBerry/i);
       },
-      iOS: function() {
+      iOS: function () {
         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
       },
-      Opera: function() {
+      Opera: function () {
         return navigator.userAgent.match(/Opera Mini/i);
       },
-      Windows: function() {
+      Windows: function () {
         return navigator.userAgent.match(/IEMobile/i);
       },
-      any: function() {
+      any: function () {
         return (
           isMobile.Android() ||
           isMobile.BlackBerry() ||
@@ -90,7 +86,7 @@ jQuery(function($) {
 
     /* ===== PIE CHARTS  ===== */
 
-    $(function() {
+    $(function () {
       $(".chart-01").easyPieChart({
         easing: "easeOutBounce",
         barColor: "#212121",
@@ -102,10 +98,8 @@ jQuery(function($) {
           duration: 2000,
           enabled: true,
         },
-        onStep: function(from, to, percent) {
-          $(this.el)
-            .find(".percent")
-            .text(Math.round(percent));
+        onStep: function (from, to, percent) {
+          $(this.el).find(".percent").text(Math.round(percent));
         },
       });
 
@@ -120,10 +114,8 @@ jQuery(function($) {
           duration: 2000,
           enabled: true,
         },
-        onStep: function(from, to, percent) {
-          $(this.el)
-            .find(".percent")
-            .text(Math.round(percent));
+        onStep: function (from, to, percent) {
+          $(this.el).find(".percent").text(Math.round(percent));
         },
       });
 
@@ -138,10 +130,8 @@ jQuery(function($) {
           duration: 2000,
           enabled: true,
         },
-        onStep: function(from, to, percent) {
-          $(this.el)
-            .find(".percent")
-            .text(Math.round(percent));
+        onStep: function (from, to, percent) {
+          $(this.el).find(".percent").text(Math.round(percent));
         },
       });
     });
@@ -337,7 +327,7 @@ jQuery(function($) {
 
     /* ===== ONE PAGE SCROLLER ===== */
 
-    $("a.page-scroll").on("click", function(event) {
+    $("a.page-scroll").on("click", function (event) {
       var $anchor = $(this);
       $("html, body")
         .stop()
@@ -351,7 +341,7 @@ jQuery(function($) {
       event.preventDefault();
     });
 
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
       var scrollTop = $(window).scrollTop();
       if (scrollTop > 34) {
         $(".nav-scrollspy-onepage").addClass("fixed-menu");
@@ -414,17 +404,17 @@ jQuery(function($) {
     //search bar middle alignment
     $("#fullscreen-searchform").css("top", wHeight / 2);
     //reform search bar
-    jQuery(window).resize(function() {
+    jQuery(window).resize(function () {
       wHeight = window.innerHeight;
       $("#fullscreen-searchform").css("top", wHeight / 2);
     });
     // Search
-    $("#search-button").on("click", function() {
+    $("#search-button").on("click", function () {
       $("div.fullscreen-search-overlay").addClass(
         "fullscreen-search-overlay-show"
       );
     });
-    $("a.fullscreen-close").on("click", function() {
+    $("a.fullscreen-close").on("click", function () {
       $("div.fullscreen-search-overlay").removeClass(
         "fullscreen-search-overlay-show"
       );
@@ -466,7 +456,7 @@ jQuery(function($) {
     var revapi347,
       tpj = jQuery;
 
-    tpj(document).ready(function() {
+    tpj(document).ready(function () {
       if (tpj("#rev_slider_1078_1").revolution == undefined) {
         revslider_showDoubleJqueryError("#rev_slider_1078_1");
       } else {
@@ -499,8 +489,7 @@ jQuery(function($) {
                 hide_onleave: true,
                 hide_delay: 200,
                 hide_delay_mobile: 1200,
-                tmp:
-                  '<div class="tp-title-wrap"> <span class="tp-arr-titleholder">{{title}}</span><span class="tp-arr-imgholder"></span></div>',
+                tmp: '<div class="tp-title-wrap"> <span class="tp-arr-titleholder">{{title}}</span><span class="tp-arr-imgholder"></span></div>',
                 left: {
                   h_align: "left",
                   v_align: "center",
@@ -547,22 +536,7 @@ jQuery(function($) {
               origo: "slidercenter",
               speed: 2000,
               levels: [
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                12,
-                16,
-                10,
-                50,
-                47,
-                48,
-                49,
-                50,
-                51,
-                55,
+                2, 3, 4, 5, 6, 7, 12, 16, 10, 50, 47, 48, 49, 50, 51, 55,
               ],
               type: "mouse",
             },
@@ -588,7 +562,7 @@ jQuery(function($) {
 
       /* ===== CBP PORTFOLIO ===== */
 
-      $(window).on("load", function() {
+      $(window).on("load", function () {
         var wow = new WOW({
           offset: 100,
           mobile: false,
@@ -702,7 +676,7 @@ jQuery(function($) {
 
     /* ===== BACK TO TOP  ===== */
 
-    $(window).on("scroll", function(e) {
+    $(window).on("scroll", function (e) {
       if ($(this).scrollTop() >= 50) {
         $("#return-to-top").fadeIn(200);
       } else {
@@ -710,7 +684,7 @@ jQuery(function($) {
       }
     });
 
-    $("#return-to-top").on("click", function(e) {
+    $("#return-to-top").on("click", function (e) {
       $("body,html").animate(
         {
           scrollTop: 0,
@@ -761,7 +735,7 @@ jQuery(function($) {
     --> Windows+Shift+S
 */
 
-  document.addEventListener("keyup", function(e) {
+  document.addEventListener("keyup", function (e) {
     var keyCode = e.keyCode ? e.keyCode : e.which;
     if (keyCode == 44) {
       stopPrntScr();
@@ -826,41 +800,41 @@ jQuery(function($) {
 
   /*End Jquery*/
 
-  document.addEventListener("keydown", function(e) {
+  document.addEventListener("keydown", function (e) {
     if (e.keyCode == 44) {
       e.preventDefault();
       return false;
     }
   });
 
-  document.addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function (event) {
     if (event.keyCode == 116) {
       event.preventDefault();
       alert("The F5 key is disabled on this website");
     }
   });
 
-  document.addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function (event) {
     if (event.keyCode == 44) {
       event.preventDefault();
       alert("Screenshots are disabled on this website");
     }
   });
 
-  document.addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function (event) {
     if (event.key === "PrintScreen") {
       event.preventDefault();
       alert("Screenshots are disabled on this website");
     }
   });
 
-  document.addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function (event) {
     if (event.key == "Enter") {
       event.preventDefault();
     }
   });
 
-  document.addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function (event) {
     if (
       (event.ctrlKey && event.key == "c") ||
       (event.ctrlKey && event.key == "v")
@@ -869,19 +843,19 @@ jQuery(function($) {
     }
   });
 
-  document.addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function (event) {
     if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() == "a") {
       event.preventDefault();
     }
   });
 
-  document.addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function (event) {
     if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() == "a") {
       event.preventDefault();
     }
   });
 
-  document.addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function (event) {
     if (event.ctrlKey && event.shiftKey) {
       event.preventDefault();
     }

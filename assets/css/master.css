@@ -1466,6 +1466,7 @@ input.search-bar-top:-moz-placeholder {
 }
 .fixed-bg {
   background-attachment: fixed !important;
+  width: 100%;
 }
 .overlay-bg {
   background: rgba(0, 0, 0, 0.6);
